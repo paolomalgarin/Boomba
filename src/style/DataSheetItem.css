@@ -1,0 +1,38 @@
+.DataSheetItem #switchDataSheet {
+    display: none;
+}
+
+.DataSheetItem label {
+    height: 60px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 2vw 0;
+    font-weight: bold;
+}
+
+.DataSheetItem label:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
+.DataSheetItem label:active {
+    box-shadow: 1.4px 1.4px 3px black;
+}
+
+.DataSheetItem .gray {
+    background-color: var(--darkGray);
+    color: var(--primaryColor);
+    border: solid .7rem var(--secondaryColorLight);
+}
+
+.DataSheetItem .brown {
+    background-color: var(--darkBrown);
+    color: var(--secondaryColor);
+    border: solid .7rem var(--darkerBrown);
+}

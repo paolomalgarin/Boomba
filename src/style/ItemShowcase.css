@@ -1,0 +1,18 @@
+.ItemShowcase {
+    padding-bottom: 6rem;
+}
+
+.ItemShowcase .title {
+    padding-bottom: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    font-size: calc(1rem + 4vh + 4vw);
+    color: var(--red);
+    text-shadow: 3px 3px 5px var(--darkBrown);
+}
+
+.ItemShowcase .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

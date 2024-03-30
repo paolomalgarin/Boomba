@@ -1,0 +1,29 @@
+.DataSheet_Graphic{
+    min-height: 90vh;
+    background-color: var(--darkBrown);
+    color: var(--secondaryColor);
+    margin: 2vw;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid .7rem var(--darkerBrown);
+    border-radius: 2rem;
+    background-image: url("../assets/color-palette.svg");
+    background-size: contain;
+
+    padding: 10px 5%;
+}
+
+.DataSheet_Graphic .title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+
+/* ----------------- PHONE GUI VARS ----------------- */
+@media (max-width: 1281px) {
+    .DataSheet_Graphic .title {
+        font-size: 1.4rem;
+    }
+}

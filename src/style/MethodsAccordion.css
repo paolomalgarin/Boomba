@@ -1,0 +1,36 @@
+.MethodsAccordion {
+    padding: 3px 0;
+}
+
+.MethodsAccordion pre {
+    display: inline;
+}
+
+.MethodsAccordion .accordion-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--lightGreen);
+}
+
+.MethodsAccordion .accordion-wrapper {
+    overflow: hidden;
+    overflow-y: scroll;
+    /* transition: height .5s; */
+    padding-left: 20px;
+}
+
+.MethodsAccordion .accordion-wrapper .accordion-content {
+    max-width: 1000px;
+    overflow: hidden;
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.MethodsAccordion .unactive {
+    height: 0;
+}
+
+.MethodsAccordion *::-webkit-scrollbar {
+    width: 0;
+}

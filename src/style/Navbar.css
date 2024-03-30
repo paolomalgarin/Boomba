@@ -1,0 +1,137 @@
+/* -------------------- CONTENITORE NAVBAR -------------------- */
+.header {
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: top .4s ease-in-out;
+}
+.header:hover{
+    box-shadow: 0 0 1rem #333;
+}
+
+
+/* -------------------- LOGO AZIENDA -------------------- */
+/* contenitore logo */
+.header .logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: inherit;
+    left: calc(50% - 3.5rem/2);
+}
+
+/* immagine logo */
+.header .logo img {
+    height: 100%;
+    width: 100%;
+    contain: content;
+}
+
+
+/* -------------------- HAMBURGER MENU -------------------- */
+/* contenitore menu (label) */
+.header .menu_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+/* logo del menu */
+.header .menu_icon .nav_icon {
+    height: 10%;
+    width: 70%;
+    background: var(--primaryColor);
+    position: absolute;
+    border-radius: 10rem;
+}
+
+.header .menu_icon .nav_icon:before,
+.header .menu_icon .nav_icon:after {
+    background: var(--primaryColor);
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    transition: all .2s ease-out;
+    border-radius: 10rem;
+}
+
+.header .menu_icon .nav_icon:before {
+    top: 200%;
+}
+
+.header .menu_icon .nav_icon::after {
+    bottom: 200%;
+}
+
+
+/* -------------------- MENU -------------------- */
+/* contenitore del menu (ul) */
+.header .menu {
+    background: var(--secondaryColorLight);
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    height: 0;
+    transition: all .2s ease-out;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* links del menu (li) */
+.header .menu a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    outline-style: none;
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* nascondo la checkbox */
+.header .menuBTN {
+    display: none;
+}
+
+
+/* -------------------- SCOMPARSA MENU -------------------- */
+.header .menuBTN:checked~.menu {
+    height: 100vh;
+}
+
+/* creo la X al posto dell'hamburger menu */
+.header .menuBTN:checked~.menu_icon .nav_icon {
+    background-color: transparent;
+}
+
+.header .menuBTN:checked~.menu_icon .nav_icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menuBTN:checked~.menu_icon .nav_icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+/* ----------------- SCROLL BAR DEL MENU A TENDINA (in caso di overflow) ----------------- */
+.header::-webkit-scrollbar {
+    width: 0;
+}

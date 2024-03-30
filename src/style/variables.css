@@ -1,0 +1,22 @@
+*{
+    /* colori */
+    --darkGreen: #588157;
+    --green: #4a8e39;
+    --lightGreen: #68bb54;
+    --brown: #816954;
+    --darkBrown: #695a4c;
+    --darkerBrown: #4b4036;
+    --darkGray: #292929;
+    --red: #860d0d;
+    --gray: #707070;
+    --teal: #15b786;
+    
+    --selectionColor: #52813e;
+    --primaryColor: #eee;
+    --secondaryColor: #0e0e0e;
+    --secondaryColorLight: #1a1a1a;
+
+    --navbar-height: 5rem;
+    --hamburger-menu-height: .35rem;
+    --hamburger-menu-width: 2.7rem;
+}

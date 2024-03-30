@@ -1,0 +1,28 @@
+.DataSheet_Logic {
+    min-height: 90vh;
+    background-color: var(--darkGray);
+    color: var(--primaryColor);
+    margin: 2vw;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid .7rem var(--secondaryColorLight);
+    border-radius: 2rem;
+    background-image: url("../assets/gear-wheels.svg");
+
+    padding: 10px 5%;
+}
+
+.DataSheet_Logic .title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+
+/* ----------------- PHONE GUI VARS ----------------- */
+@media (max-width: 1281px) {
+    .DataSheet_Logic .title {
+        font-size: 1.4rem;
+    }
+}

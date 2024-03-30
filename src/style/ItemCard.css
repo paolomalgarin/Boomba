@@ -1,0 +1,51 @@
+/* ----------------- DESKTOP GUI VARS ----------------- */
+@media (min-width: 1281px) {
+    .ItemCard {
+        --cardHeight: calc(var(--cardWidth) / 3);
+        --cardWidth: 44vw;
+        --descFontSize: 1.5rem;
+    }
+}
+
+/* ----------------- PHONE GUI VARS ----------------- */
+@media (max-width: 1281px) {
+    .ItemCard {
+        --cardHeight: calc(var(--cardWidth) / 2.5);
+        --cardWidth: 96vw;
+        --descFontSize: .7rem;
+    }
+}
+
+.ItemCard {
+    height: var(--cardHeight);
+    width: var(--cardWidth);
+    background-color: var(--darkGray);
+    color: var(--primaryColor);
+    margin: 1vw;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: solid .3rem var(--darkGray);
+    display: flex;
+}
+
+.ItemCard img {
+    width: var(--cardHeight);
+    height: var(--cardHeight);
+    background-color: darkgray;
+}
+
+.ItemCard .description {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    font-size: var(--descFontSize);
+}
+
+.ItemCard .description .title {
+    text-align: center;
+    padding: 0;
+    font-size: calc(var(--descFontSize) * 1.5);
+    color: var(--primaryColor);
+    text-shadow: none;
+}
