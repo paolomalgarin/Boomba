@@ -8,7 +8,7 @@ import campoMinatoLogo from "./assets/logo.png"
 import game_bg from "./assets/game-bg.png"
 import tmp_coperto from "./assets/campoMinato-objects/coperta.jpg"  //roba tmp per cardsData *->
 import tmp_vuoto from "./assets/campoMinato-objects/scoperta.jpg"
-import tmp_mina from "./assets/logo.png"
+import tmp_mina from "./assets/campoMinato-objects/bomba.png"
 import tmp_flag from "./assets/campoMinato-objects/flag.png"
 import tmp_1 from "./assets/campoMinato-objects/1.jpg"
 import tmp_2 from "./assets/campoMinato-objects/2.png"
