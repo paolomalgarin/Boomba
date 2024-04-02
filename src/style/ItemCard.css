@@ -3,7 +3,7 @@
     .ItemCard {
         --cardHeight: calc(var(--cardWidth) / 3);
         --cardWidth: 44vw;
-        --descFontSize: 1.5rem;
+        --descFontSize: 1.4rem;
     }
 }
 
