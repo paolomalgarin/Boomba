@@ -40,6 +40,11 @@
     margin: 0;
     padding: 15px;
     font-size: var(--descFontSize);
+    overflow-y: scroll;
+}
+
+.ItemCard .description::-webkit-scrollbar {
+    width: 0;
 }
 
 .ItemCard .description .title {
