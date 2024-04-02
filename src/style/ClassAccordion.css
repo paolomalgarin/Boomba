@@ -1,6 +1,7 @@
 .ClassAccordion {
     padding: 3px 0;
     padding-bottom: 15px;
+    font-weight: 500;
 }
 
 .ClassAccordion .keyWord{
