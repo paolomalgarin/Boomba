@@ -33,3 +33,20 @@
 .AttributesAccordion *::-webkit-scrollbar {
     width: 0;
 }
+
+/* desktop gui */
+@media (min-width: 1281px) {
+
+    .AttributesAccordion .accordion-title {
+        font-size: 1.8rem;
+    }
+
+    .AttributesAccordion .accordion-wrapper .accordion-content {
+        font-size: 1.1rem;
+        max-width: 1200px;
+    }
+
+    .AttributesAccordion .accordion-wrapper {
+        padding-left: 40px;
+    }
+}

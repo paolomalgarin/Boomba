@@ -34,3 +34,20 @@
 .MethodsAccordion *::-webkit-scrollbar {
     width: 0;
 }
+
+/* desktop gui */
+@media (min-width: 1281px) {
+
+    .MethodsAccordion .accordion-title {
+        font-size: 1.8rem;
+    }
+
+    .MethodsAccordion .accordion-wrapper .accordion-content {
+        font-size: 1.1rem;
+        max-width: 1200px;
+    }
+
+    .MethodsAccordion .accordion-wrapper {
+        padding-left: 40px;
+    }
+}
