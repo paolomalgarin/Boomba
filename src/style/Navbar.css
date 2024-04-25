@@ -8,7 +8,8 @@
     z-index: 100;
     transition: top .4s ease-in-out;
 }
-.header:hover{
+
+.header:hover {
     box-shadow: 0 0 1rem #333;
 }
 
@@ -134,4 +135,67 @@
 /* ----------------- SCROLL BAR DEL MENU A TENDINA (in caso di overflow) ----------------- */
 .header::-webkit-scrollbar {
     width: 0;
+}
+
+
+
+/* accordion */
+.Accordion {
+    padding: 3px 0;
+}
+
+.Accordion pre {
+    display: inline;
+}
+
+.Accordion .accordion-title {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    outline-style: none;
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.Accordion .accordion-wrapper {
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Accordion .accordion-wrapper .accordion-content {
+    overflow: hidden;
+    text-align: center;
+}
+
+.Accordion .accordion-wrapper .accordion-content a {
+    font-weight: 100;
+    font-size: 24px;
+    color: var(--gray);
+}
+
+.Accordion .unactive {
+    height: 0;
+}
+
+.Accordion *::-webkit-scrollbar {
+    width: 0;
+}
+
+/* desktop gui */
+@media (min-width: 1281px) {
+
+    .Accordion .accordion-title {
+        font-size: 1.8rem;
+    }
+
+    .Accordion .accordion-wrapper .accordion-content {
+        font-size: 1.1rem;
+    }
 }

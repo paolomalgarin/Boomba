@@ -5,6 +5,8 @@ import "../style/Navbar.css";
 
 function Navbar({ logoURL, linkTitles }) {
 
+    const [isDownloadOpened, setIsDownloadOpened] = useState(false);
+
     const handleClick = () => {
         document.querySelector(".header #menu-BTN").checked = !document.querySelector(".header #menu-BTN").checked;
     }
@@ -23,6 +25,18 @@ function Navbar({ logoURL, linkTitles }) {
                             <li key={title.id}><a href={title.link} onClick={handleClick}>{title.name}</a></li>
                         ))
                 }
+                {/* accordion x download (fatto al volo) */}
+                <li className="Accordion" key={-104}>
+                    <div className="accordion-title" onClick={() => setIsDownloadOpened(!isDownloadOpened)}>
+                        <span className="keyWord" style={{ textDecoration: isDownloadOpened ? "underline" : "" }}>DOWNLOAD</span>
+                    </div>
+                    <div className={`accordion-wrapper${!isDownloadOpened ? " unactive" : ""}`}>
+                        <div className="accordion-content">
+                            <a href="../../public/exe/Campo Minato 1.0.exe" download>download V1.0</a>
+                            <a href="../../public/exe/Campo Minato.exe" download>download V1.1</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </header>
 
