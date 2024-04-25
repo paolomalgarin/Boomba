@@ -32,8 +32,8 @@ function Navbar({ logoURL, linkTitles }) {
                     </div>
                     <div className={`accordion-wrapper${!isDownloadOpened ? " unactive" : ""}`}>
                         <div className="accordion-content">
-                            <a href="../../public/exe/Campo Minato 1.0.exe" download>download V1.0</a>
-                            <a href="../../public/exe/Campo Minato.exe" download>download V1.1</a>
+                            <a href="../../exe/Campo Minato 1.0.exe" download>download V1.0</a>
+                            <a href="../../exe/Campo Minato.exe" download>download V1.1</a>
                         </div>
                     </div>
                 </li>
