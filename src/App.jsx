@@ -10,7 +10,7 @@ import tmp_coperto from "./assets/campoMinato-objects/coperta.jpg"  //roba tmp p
 import tmp_vuoto from "./assets/campoMinato-objects/scoperta.jpg"
 import tmp_mina from "./assets/campoMinato-objects/bomba.png"
 import tmp_flag from "./assets/campoMinato-objects/flag.png"
-import tmp_1 from "./assets/campoMinato-objects/1.jpg"
+import tmp_1 from "./assets/campoMinato-objects/1.png"
 import tmp_2 from "./assets/campoMinato-objects/2.png"
 import tmp_3 from "./assets/campoMinato-objects/3.png"
 import tmp_4 from "./assets/campoMinato-objects/4.png"
