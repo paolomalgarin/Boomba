@@ -5,6 +5,7 @@ import "../style/MethodsAccordion.css";
 function MethodsAccordion({ data }) {
 
     const [isActive, setIsActive] = useState(false);
+    console.log(data.params.length);
 
     return (
         <div className="MethodsAccordion">
@@ -13,7 +14,7 @@ function MethodsAccordion({ data }) {
                 {
                     data.params
                         .map((par) => (
-                            <span className="keyWord" key={par.id}>{par.type} {par.name}</span>
+                            <span className="keyWord" key={par.id}>{par.type} {par.name}{(par.id < data.params.length - 1) ? ", " : ""}</span>
                         ))
                 }
                 )
