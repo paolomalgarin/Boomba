@@ -6,6 +6,8 @@
 
 .ClassAccordion .keyWord {
     color: var(--teal);
+    display: inline-block;
+    height: fit-content;
 }
 
 .ClassAccordion pre {
@@ -17,26 +19,42 @@
     font-weight: 700;
     cursor: pointer;
     color: var(--accordionColor);
+    display: inline-block;
+    height: fit-content;
+    width: 100%;
+    word-break: break-all;
 }
 
 .ClassAccordion .accordion-wrapper {
-    overflow: hidden;
-    overflow-y: scroll;
-    /* transition: height .5s; */
     padding-left: 20px;
 }
 
 .ClassAccordion .accordion-wrapper .accordion-content {
     max-width: 1000px;
-    overflow: hidden;
+}
+
+.ClassAccordion * {
+    animation: spawn .3s ease-in-out;
 }
 
 .ClassAccordion .unactive {
-    height: 0;
+    display: none;
 }
 
 .ClassAccordion *::-webkit-scrollbar {
     width: 0;
+}
+
+.ClassAccordion .statusArrow {
+    margin: 0;
+    display: inline-block;
+    transform-origin: 50% 50% 0;
+    transform: rotate(-90deg) translate(0, 10px);
+    transition: all .2s ease;
+}
+
+.ClassAccordion .downArrow {
+    transform: rotate(-90deg) scaleX(-1) translate(0, 10px);
 }
 
 /* desktop gui */
@@ -53,5 +71,17 @@
 
     .ClassAccordion .accordion-wrapper {
         padding-left: 40px;
+    }
+}
+
+
+
+@keyframes spawn {
+    from {
+        transform: translate(20px);
+    }
+
+    to {
+        transform: translate(0);
     }
 }

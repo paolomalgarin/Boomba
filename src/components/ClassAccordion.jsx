@@ -11,8 +11,8 @@ function ClassAccordion({ data }) {
     return (
         <div className="ClassAccordion">
             <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-                <span className="keyWord">class </span>{data.class}
-                <pre className="keyWord">{isActive ? " >" : " <"}</pre>
+                <span className="keyWord">class&nbsp;</span>{data.class}
+                <pre className={`keyWord statusArrow ${isActive && "downArrow"}`}>{">"}</pre>
             </div>
             <div className={`accordion-wrapper${!isActive ? " unactive" : ""}`}>
                 <div className="accordion-content">

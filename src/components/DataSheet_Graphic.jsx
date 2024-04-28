@@ -58,7 +58,7 @@ function DataSheet_Graphic() {
                     type: "void",
                     name: "addListenerToAllComponents",
                     params: [
-                        { id: 0, type: "java.awt.Container", name: "container" },
+                        { id: 0, type: "Container", name: "container" },
                         { id: 1, type: "Classifica", name: "frame" }
                     ],
                     description: "Aggiunge listener del mouse per trascinamento e doppio clic a tutti i componenti della finestra."
@@ -252,7 +252,7 @@ function DataSheet_Graphic() {
                     type: "void",
                     name: "formWindowClosed",
                     params: [
-                        { id: 0, type: "java.awt.event.WindowEvent", name: "evt" },
+                        { id: 0, type: "WindowEvent", name: "evt" },
                     ],
                     description: "Gestisce l'evento di chiusura della finestra, riaprendo il menu principale e rendendo invisibili flag e classifica",
                 },
@@ -262,7 +262,7 @@ function DataSheet_Graphic() {
                     type: "void",
                     name: "formWindowClosing",
                     params: [
-                        { id: 0, type: "java.awt.event.WindowEvent", name: "evt" },
+                        { id: 0, type: "WindowEvent", name: "evt" },
                     ],
                     description: "Gestisce l'evento di chiusura della finestra, riaprendo il menu principale e resettando tutte le bandiere",
                 },
@@ -272,7 +272,7 @@ function DataSheet_Graphic() {
                     type: "void",
                     name: "formComponentResized",
                     params: [
-                        { id: 0, type: "java.awt.event.ComponentEvent", name: "evt" },
+                        { id: 0, type: "WindowEvent", name: "evt" },
                     ],
                     description: "Gestisce l'evento di ridimensionamento del frame, riportando flag e classifica allo stato normale",
                 },
@@ -282,7 +282,7 @@ function DataSheet_Graphic() {
                     type: "void",
                     name: "formWindowIconified",
                     params: [
-                        { id: 0, type: "java.awt.event.WindowEvent", name: "evt" },
+                        { id: 0, type: "WindowEvent", name: "evt" },
                     ],
                     description: "Gestisce l'evento di minimizzazione della finestra, minimizzando anche flag e classifica",
                 },

@@ -10,7 +10,7 @@ function AttributesAccordion({ data }) {
         <div className="AttributesAccordion">
             <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
                 <span className="keyWord">Attributi</span>
-                <pre className="keyWord">{isActive ? " >" : " <"}</pre>
+                <pre className={`keyWord statusArrow ${isActive && "downArrow"}`}>{">"}</pre>
             </div>
             <div className={`accordion-wrapper${!isActive ? " unactive" : ""}`}>
                 <div className="accordion-content">

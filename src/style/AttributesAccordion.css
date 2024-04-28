@@ -11,6 +11,8 @@
     font-weight: 700;
     cursor: pointer;
     color: var(--lightGreen);
+    height: 20px;
+    padding-top: 10px;
 }
 
 .AttributesAccordion .accordion-wrapper {

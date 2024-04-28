@@ -11,6 +11,8 @@
     font-weight: 700;
     cursor: pointer;
     color: var(--accordionColor);
+    height: 30px;
+    padding-top: 5px;
 }
 
 .MethodsAccordion .accordion-wrapper {
@@ -21,8 +23,8 @@
 }
 
 .MethodsAccordion .accordion-wrapper .accordion-content {
-    max-width: 1000px;
-    overflow: hidden;
+    max-width: 1100px;
+    /* overflow: hidden; */
     font-size: .95rem;
     font-weight: 400;
 }
@@ -40,6 +42,7 @@
 
     .MethodsAccordion .accordion-title {
         font-size: 1.8rem;
+        height: 40px;
     }
 
     .MethodsAccordion .accordion-wrapper .accordion-content {
