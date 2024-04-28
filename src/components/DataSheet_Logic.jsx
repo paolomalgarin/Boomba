@@ -251,7 +251,7 @@ function DataSheet_Logic() {
                     params: [
                         { id: 0, type: "", name: "" },
                     ],
-                    description: "Ritorna true se le coordinate di ogni Mina dell’ArrayList mine coincidono con quelle delle bandierine messe dall’utente",
+                    description: "Ritorna true se è stata scoperta ogni casella senza una mina",
                 },
                 {
                     id: 8,
@@ -281,7 +281,7 @@ function DataSheet_Logic() {
                     params: [
                         { id: 0, type: "Punto", name: "p" },
                     ],
-                    description: "Crea il campo minato al primo click del mouse nella matrice. Normalmente, invece,  va a mostrare il valore della casella e quelle nelle vicinanze se il valore è nullo",
+                    description: "Crea il campo minato al primo click del mouse nella matrice. Normalmente, invece, va a scoprire la casella e quelle nelle vicinanze se la casella è vuota",
                 },
                 {
                     id: 11,
@@ -291,7 +291,7 @@ function DataSheet_Logic() {
                     params: [
                         { id: 0, type: "Punto", name: "p" },
                     ],
-                    description: "Controlla se il punto p ha una bandierina. Se non, chiama il metodo scopriCasella(p) e ritorna true se la casella scoperta è una mina",
+                    description: "Ritorna -1 se il punto p è una mina. Altrimenti controlla se il punto p ha una bandierina e se non cel'ha, chiama il metodo scopriCasella(p) e ritorna 1 se la partita è stata vinta con quel click. Ritorna 0 se non è successo niente",
                 },
                 {
                     id: 12,

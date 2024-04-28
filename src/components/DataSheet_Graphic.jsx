@@ -99,8 +99,8 @@ function DataSheet_Graphic() {
                     name: "getStats",
                     params: [],
                     description: "Restituisce una stringa con il nome del giocatore e il suo punteggio calcolato."
-                }
-            ]
+                },
+            ],
         },
         {
             id: 1,
@@ -219,8 +219,8 @@ function DataSheet_Graphic() {
                         { id: 1, type: "java.awt.Color", name: "border" },
                     ],
                     description: "Imposta il colore di sfondo e il bordo di tutte le etichette della bandiera",
-                }
-            ]
+                },
+            ],
         },
         {
             id: 2,
@@ -286,8 +286,8 @@ function DataSheet_Graphic() {
                     ],
                     description: "Gestisce l'evento di minimizzazione della finestra, minimizzando anche flag e classifica",
                 },
-            ]
-        }
+            ],
+        },
     ];
 
     return (
