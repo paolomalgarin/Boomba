@@ -135,19 +135,21 @@ function DataSheet_Graphic() {
                 { d: "isVinta: booleano per indicare se il gioco è stato vinto", id: 5 },
                 { d: "mouseClickPoint: memorizza la posizione del mouse durante il clic per il trascinamento della finestra", id: 6 },
                 { d: "isFlagAttached: booleano che indica se la finestra della bandiera è attaccata al campo minato", id: 7 },
+                { d: "parent: istanza di JCampoMinato che rappresenta il genitore della finestra delle bandiere", id: 8 },
             ],
             isMethods: true,
             methods: [
                 {
                     id: 0,
                     isPublic: true,
-                    type: "void",
+                    type: "",
                     name: "Flag",
                     params: [
-                        { id: 0, type: "Difficulty", name: "d" },
-                        { id: 1, type: "int", name: "x" },
-                        { id: 2, type: "int", name: "y" },
-                        { id: 3, type: "Boolean", name: "isFlagAttached" },
+                        { id: 0, type: "JCampoMinato", name: "parent" },
+                        { id: 1, type: "Difficulty", name: "d" },
+                        { id: 2, type: "int", name: "x" },
+                        { id: 3, type: "int", name: "y" },
+                        { id: 4, type: "Boolean", name: "isFlagAttached" },
                     ],
                     description: "Costruttore che inizializza la finestra 'Flag', impostando dimensioni e posizione in base alla difficoltà",
                 },
@@ -261,7 +263,7 @@ function DataSheet_Graphic() {
                     name: "getIsFlagAttached",
                     params: [{}],
                     description: "Restituisce il valore dell'attributo statico 'isFlagAttached' che indica se la finestra della bandiera è attaccata al campo minato",
-                }
+                },
             ],
         },
         {
@@ -280,7 +282,7 @@ function DataSheet_Graphic() {
                 {
                     id: 0,
                     isPublic: true,
-                    type: "void",
+                    type: "",
                     name: "JCampoMinato",
                     params: [
                         { id: 0, type: "Difficulty", name: "d" },
@@ -355,7 +357,7 @@ function DataSheet_Graphic() {
                 {
                     id: 0,
                     isPublic: true,
-                    type: "void",
+                    type: "",
                     name: "JCasella",
                     params: [
                         { id: 0, type: "int", name: "x" },
@@ -370,8 +372,8 @@ function DataSheet_Graphic() {
                     name: "ChangeImage",
                     params: [{ id: 0, type: "Stato", name: "s" }],
                     description: "Cambia l'immagine della casella in base allo stato specificato. Gli stati possono rappresentare vari aspetti del gioco, come COPERTA, BRUCIATA, SCOPERTA, FLAG, MINA, ESPLOSIONE, e numeri da 1 a 8",
-                }
-            ]
+                },
+            ],
         },
         {
             id: 4,
@@ -389,7 +391,7 @@ function DataSheet_Graphic() {
                 {
                     id: 0,
                     isPublic: true,
-                    type: "void",
+                    type: "",
                     name: "JMatrice",
                     params: [
                         { id: 0, type: "JCampoMinato", name: "frame" },
@@ -473,7 +475,7 @@ function DataSheet_Graphic() {
                 {
                     id: 0,
                     isPublic: true,
-                    type: "void",
+                    type: "",
                     name: "Menù",
                     params: [
                         { id: 0, type: "Difficulty", name: "scelta" },
@@ -575,7 +577,7 @@ function DataSheet_Graphic() {
                 {
                     id: 0,
                     isPublic: true,
-                    type: "void",
+                    type: "",
                     name: "Start",
                     params: [{}],
                     description: "Costruttore che inizializza la finestra di avvio, impostando la posizione e il colore di sfondo. Aggiunge listener per eventi di mouse e tasti di interazione",
@@ -636,81 +638,87 @@ function DataSheet_Graphic() {
                     params: [{ id: 0, type: "MouseEvent", name: "evt" }],
                     description: "Gestisce il clic sul pulsante 'X' per chiudere l'applicazione, terminando il programma",
                 },
-                {
-                    id: 8,
-                    isPublic: true,
-                    type: "void",
-                    name: "jLabel1MousePressed",
-                    params: [{ id: 0, type: "MouseEvent", name: "evt" }],
-                    description: "Gestisce il clic sull'immagine principale, aprendo il menu principale e chiudendo la finestra di avvio",
-                },
-            ],
+            ]
         },
         {
-            id: 7,
-            class: "Stato",
+            id: 1,
+            enum: "Stato",
             description: "Enumerazione che rappresenta i diversi stati che una casella può assumere in un campo minato. Ogni stato corrisponde a un'icona o colore specifico",
-            isMethods: false,
-            attributes: [
+            values: [
                 {
                     id: 0,
-                    d: "COPERTA: Rappresenta una casella coperta, senza rivelazioni",
+                    name: "COPERTA",
+                    description: "Rappresenta una casella coperta, senza rivelazioni",
                 },
                 {
                     id: 1,
-                    d: "NUM_1: Rappresenta una casella con il numero 1, indicando la presenza di una mina vicina",
+                    name: "NUM_1",
+                    description: "Rappresenta una casella con il numero 1, indicando la presenza di una mina vicina",
                 },
                 {
                     id: 2,
-                    d: "NUM_2: Rappresenta una casella con il numero 2, indicando la presenza di due mine vicine",
+                    name: "NUM_2",
+                    description: "Rappresenta una casella con il numero 2, indicando la presenza di due mine vicine",
                 },
                 {
                     id: 3,
-                    d: "NUM_3: Rappresenta una casella con il numero 3, indicando la presenza di tre mine vicine",
+                    name: "NUM_3",
+                    description: "Rappresenta una casella con il numero 3, indicando la presenza di tre mine vicine",
                 },
                 {
                     id: 4,
-                    d: "NUM_4: Rappresenta una casella con il numero 4, indicando la presenza di quattro mine vicine",
+                    name: "NUM_4",
+                    description: "Rappresenta una casella con il numero 4, indicando la presenza di quattro mine vicine",
                 },
                 {
                     id: 5,
-                    d: "NUM_5: Rappresenta una casella con il numero 5, indicando la presenza di cinque mine vicine",
+                    name: "NUM_5",
+                    description: "Rappresenta una casella con il numero 5, indicando la presenza di cinque mine vicine",
                 },
                 {
                     id: 6,
-                    d: "NUM_6: Rappresenta una casella con il numero 6, indicando la presenza di sei mine vicine",
+                    name: "NUM_6",
+                    description: "Rappresenta una casella con il numero 6, indicando la presenza di sei mine vicine",
                 },
                 {
                     id: 7,
-                    d: "NUM_7: Rappresenta una casella con il numero 7, indicando la presenza di sette mine vicine",
+                    name: "NUM_7",
+                    description: "Rappresenta una casella con il numero 7, indicando la presenza di sette mine vicine",
                 },
                 {
                     id: 8,
-                    d: "NUM_8: Rappresenta una casella con il numero 8, indicando la presenza di otto mine vicine",
+                    name: "NUM_8",
+                    description: "Rappresenta una casella con il numero 8, indicando la presenza di otto mine vicine",
                 },
                 {
                     id: 9,
-                    d: "MINA: Rappresenta una casella con una mina",
+                    name: "MINA",
+                    description: "Rappresenta una casella con una mina",
                 },
                 {
                     id: 10,
-                    d: "SCOPERTA: Rappresenta una casella scoperta",
+                    name: "SCOPERTA",
+                    description: "Rappresenta una casella scoperta",
                 },
                 {
                     id: 11,
-                    d: "FLAG: Rappresenta una casella con una bandiera, indicando che potrebbe contenere una mina",
+                    name: "FLAG",
+                    description: "Rappresenta una casella con una bandiera, indicando che potrebbe contenere una mina",
                 },
                 {
                     id: 12,
-                    d: "FIORE: Rappresenta una casella con un fiore, un elemento speciale o bonus",
+                    name: "FIORE",
+                    description: "Rappresenta una casella con un fiore, un elemento speciale o bonus",
                 },
                 {
                     id: 13,
-                    d: "ESPLOSIONE: Rappresenta una casella che ha subito un'esplosione",
+                    name: "ESPLOSIONE",
+                    description: "Rappresenta una casella che ha subito un'esplosione",
                 },
                 {
                     id: 14,
-                    d: "BRUCIATA: Rappresenta una casella bruciata o danneggiata dopo un'esplosione",
+                    name: "BRUCIATA",
+                    description: "Rappresenta una casella bruciata o danneggiata dopo un'esplosione",
                 },
             ],
         },
