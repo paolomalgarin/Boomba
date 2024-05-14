@@ -642,85 +642,27 @@ function DataSheet_Graphic() {
         },
         {
             id: 1,
-            enum: "Stato",
+            class: "Stato",
             description: "Enumerazione che rappresenta i diversi stati che una casella può assumere in un campo minato. Ogni stato corrisponde a un'icona o colore specifico",
-            values: [
-                {
-                    id: 0,
-                    name: "COPERTA",
-                    description: "Rappresenta una casella coperta, senza rivelazioni",
-                },
-                {
-                    id: 1,
-                    name: "NUM_1",
-                    description: "Rappresenta una casella con il numero 1, indicando la presenza di una mina vicina",
-                },
-                {
-                    id: 2,
-                    name: "NUM_2",
-                    description: "Rappresenta una casella con il numero 2, indicando la presenza di due mine vicine",
-                },
-                {
-                    id: 3,
-                    name: "NUM_3",
-                    description: "Rappresenta una casella con il numero 3, indicando la presenza di tre mine vicine",
-                },
-                {
-                    id: 4,
-                    name: "NUM_4",
-                    description: "Rappresenta una casella con il numero 4, indicando la presenza di quattro mine vicine",
-                },
-                {
-                    id: 5,
-                    name: "NUM_5",
-                    description: "Rappresenta una casella con il numero 5, indicando la presenza di cinque mine vicine",
-                },
-                {
-                    id: 6,
-                    name: "NUM_6",
-                    description: "Rappresenta una casella con il numero 6, indicando la presenza di sei mine vicine",
-                },
-                {
-                    id: 7,
-                    name: "NUM_7",
-                    description: "Rappresenta una casella con il numero 7, indicando la presenza di sette mine vicine",
-                },
-                {
-                    id: 8,
-                    name: "NUM_8",
-                    description: "Rappresenta una casella con il numero 8, indicando la presenza di otto mine vicine",
-                },
-                {
-                    id: 9,
-                    name: "MINA",
-                    description: "Rappresenta una casella con una mina",
-                },
-                {
-                    id: 10,
-                    name: "SCOPERTA",
-                    description: "Rappresenta una casella scoperta",
-                },
-                {
-                    id: 11,
-                    name: "FLAG",
-                    description: "Rappresenta una casella con una bandiera, indicando che potrebbe contenere una mina",
-                },
-                {
-                    id: 12,
-                    name: "FIORE",
-                    description: "Rappresenta una casella con un fiore, un elemento speciale o bonus",
-                },
-                {
-                    id: 13,
-                    name: "ESPLOSIONE",
-                    description: "Rappresenta una casella che ha subito un'esplosione",
-                },
-                {
-                    id: 14,
-                    name: "BRUCIATA",
-                    description: "Rappresenta una casella bruciata o danneggiata dopo un'esplosione",
-                },
+            attributes: [
+                { id: 0, d: "COPERTA: Rappresenta una casella coperta, senza rivelazioni" },
+                { id: 1, d: "NUM_1: Rappresenta una casella con il numero 1, indicando la presenza di una mina vicina" },
+                { id: 2, d: "NUM_2: Rappresenta una casella con il numero 2, indicando la presenza di due mine vicine" },
+                { id: 3, d: "NUM_3: Rappresenta una casella con il numero 3, indicando la presenza di tre mine vicine" },
+                { id: 4, d: "NUM_4: Rappresenta una casella con il numero 4, indicando la presenza di quattro mine vicine" },
+                { id: 5, d: "NUM_5: Rappresenta una casella con il numero 4, indicando la presenza di cinque mine vicine" },
+                { id: 6, d: "NUM_6: Rappresenta una casella con il numero 4, indicando la presenza di sei mine vicine" },
+                { id: 7, d: "NUM_7: Rappresenta una casella con il numero 4, indicando la presenza di sette mine vicine" },
+                { id: 8, d: "NUM_8: Rappresenta una casella con il numero 4, indicando la presenza di otto mine vicine" },
+                { id: 9, d: "MINA: Rappresenta una casella con una mina" },
+                { id: 10, d: "SCOPERTA: Rappresenta una casella scoperta" },
+                { id: 11, d: "FLAG: Rappresenta una casella con una bandiera, indicando che potrebbe contenere una mina" },
+                { id: 12, d: "FIORE: Rappresenta una casella con un fiore, un elemento speciale o bonus" },
+                { id: 13, d: "ESPLOSIONE: Rappresenta una casella che ha subito un'esplosione" },
+                { id: 14, name: "BRUCIATA: Rappresenta una casella bruciata o danneggiata dopo un'esplosione" },
             ],
+            isMethods: false,
+            methods: [],
         },
     ];
 

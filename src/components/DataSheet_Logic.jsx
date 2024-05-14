@@ -282,16 +282,16 @@ function DataSheet_Logic() {
             ],
         },
         {
-            id: 0,
+            id: 4,
             class: "Difficulty",
             description: "È una classe enum che contiene 3 valori che andranno a determinare la grandezza del campo da gioco e il numero di mine",
             attributes: [
-                { d: "easy: indica la difficoltà per i principianti", id: 0.0 },
-                { d: "--> 10 mine in un campo 9x9", id: 0.1 },
-                { d: "medium: indica la difficoltà media", id: 0.2 },
-                { d: "--> 40 mine in un campo 16x16", id: 0.3 },
-                { d: "hard:  indica la difficoltà esperta", id: 0.4 },
-                { d: "--> 99 mine in un campo 30x16", id: 0.5 },
+                { d: "easy: indica la difficoltà per i principianti", id: 0 },
+                { d: "--> 10 mine in un campo 9x9", id: 1 },
+                { d: "medium: indica la difficoltà media", id: 2 },
+                { d: "--> 40 mine in un campo 16x16", id: 3 },
+                { d: "hard:  indica la difficoltà esperta", id: 4 },
+                { d: "--> 99 mine in un campo 30x16", id: 5 },
             ],
             isMethods: false,
             methods: [{}],
@@ -300,6 +300,7 @@ function DataSheet_Logic() {
             id: 4,
             class: "Gioco",
             description: "Classe che rappresenta il gioco del campo minato",
+            attributes: [{}],
             isMethods: true,
             methods: [
                 {
