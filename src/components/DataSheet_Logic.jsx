@@ -300,6 +300,7 @@ function DataSheet_Logic() {
             id: 4,
             class: "Gioco",
             description: "Classe che rappresenta il gioco del campo minato",
+            attributes: [{}],
             isMethods: true,
             methods: [
                 {
