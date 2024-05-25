@@ -13,7 +13,7 @@ function MethodsAccordion({ data }) {
                 {
                     data.params && data.params
                         .map((par) => (
-                            <span className="keyWord" key={par.id}>{par.type} {par.name}{(par.id < data.params.length - 1) ? ", " : ""}</span>
+                            <span className="keyWord" key={par.id}>{par.type} {par.name}{(par.id < data.params.length - 1) ? ",\xa0" : ""}</span>
                         ))
                 }
                 )

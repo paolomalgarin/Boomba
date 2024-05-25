@@ -297,23 +297,6 @@ function DataSheet_Logic() {
             methods: [{}],
         },
         {
-            id: 4,
-            class: "Gioco",
-            description: "Classe che rappresenta il gioco del campo minato",
-            attributes: [{}],
-            isMethods: true,
-            methods: [
-                {
-                    id: 0,
-                    isPublic: true,
-                    type: "void",
-                    name: "main",
-                    params: [{ id: 0, type: "String[]", name: "args" }],
-                    description: "Metodo principale per avviare il gioco",
-                },
-            ],
-        },
-        {
             id: 5,
             class: "Mina",
             description: "Classe che descrive una mina all'interno di un oggetto CampoMinato",
@@ -387,7 +370,7 @@ function DataSheet_Logic() {
                     name: "Punto",
                     params: [
                         { id: 0, type: "int", name: "x" },
-                        { id: 0, type: "int", name: "y" },
+                        { id: 1, type: "int", name: "y" },
                     ],
                     description: "Costruttore che genera un nuovo punto con le coordinate passate come parametri",
                 },
