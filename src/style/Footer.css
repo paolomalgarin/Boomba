@@ -8,6 +8,9 @@
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer .copyright {
@@ -67,15 +70,25 @@
 
 
 /* -------------------- CONTENITORE ATTRIBUTIONS X LICENZE FREE -------------------- */
-.footer .attribution{
+.footer .attribution {
     width: 100%;
     text-align: center;
+    padding: 30px 0;
+    width: fit-content;
 }
 
-.footer .attribution a{
+.footer .attribution span {
+    display: block;
+    text-align: left;
+}
+
+.footer .attribution a {
     text-decoration: none;
-    color: #eee;
-    font-size: x-small;
+    color: #bb5ef1c0;
+}
+
+.footer .attribution a:hover {
+    color: #bb5ef1;
 }
 
 

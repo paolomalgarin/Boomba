@@ -53,7 +53,6 @@ function App() {
       link: "#credits",
     },
   ]
-
   const cardsData = [  //dati delle cards degli elementi
     {
       id: 0,
@@ -140,6 +139,32 @@ function App() {
       desc: "Il numero 8 indica che in tutti e 8 i blocchi adiacenti c'è una mina.",
     },
   ]
+  const attributions = [
+    {
+      id: 0,
+      description: "parte logica e sito",
+      name: "@paolomalgarin",
+      url: "https://www.instagram.com/paolomalgarin/",
+    },
+    {
+      id: 1,
+      description: "parte grafica",
+      name: "@filippo.zanrosso",
+      url: "https://www.instagram.com/filippo.zanrosso/",
+    },
+    {
+      id: 2,
+      description: "parte grafica",
+      name: "@shabiii_._",
+      url: "https://www.instagram.com/shabiii_._/",
+    },
+    {
+      id: 3,
+      description: "documentazione",
+      name: "@matteo_spinato",
+      url: "https://www.instagram.com/matteo_spinato/",
+    },
+  ]
 
 
   //---------------------------------------------------- FUNZIONE ----------------------------------------------------
@@ -151,7 +176,7 @@ function App() {
       <ItemShowcase cards={cardsData} title={"elementi"} />
       <RulesItem id="rules" />
       <DataSheetItem id="datasheet" />
-      <Footer attributions={[{ id: 0 }]} id="credits" />
+      <Footer attributions={attributions} id="credits" />
     </>
   )
 

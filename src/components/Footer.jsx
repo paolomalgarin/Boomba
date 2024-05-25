@@ -10,20 +10,23 @@ function Footer({ attributions, id }) {
                 Boomba
             </div>
             <hr />
-            <div className="copiright">
-                © 2024 GruppoBoomba. Tutti i diritti riservati.<br />
-                <strong>MADE BY Paolo Malgarin.</strong>
-            </div>
             <div className="attribution">
                 {
                     attributions
                         .map((attr) => (
-                            <a href={attr.url} target="_blank" key={attr.id}>
-                                {attr.description}
-                            </a>
+                            <span>
+                                <a href={attr.url} target="_blank" key={attr.id}>
+                                    {attr.name}
+                                </a>
+                                &nbsp;({attr.description})
+                            </span>
                         ))
 
                 }
+            </div>
+            <div className="copiright">
+                © 2024 GruppoBoomba. Tutti i diritti riservati.<br />
+                <strong>MADE BY Paolo Malgarin.</strong>
             </div>
         </footer>
     )
